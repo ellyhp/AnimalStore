@@ -1,0 +1,209 @@
+:root{
+    --ColorNegro: rgb(14, 14, 14);
+    --ColorFondo: rgb(233,233,235);
+    --ColorBlanco: rgb(255, 255, 255);
+    --ColorVerde: rgb(0, 105, 0);
+    --ColorAmarillo: rgb(249, 187, 0);;
+}
+
+body{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Questrial', sans-serif;
+    background-color: var(--ColorFondo);
+}
+
+a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--ColorNegro);
+}
+
+.h1{
+    font-size: 2.5rem
+}
+
+p{
+    font-size: 1rem;
+}
+
+h3{
+    font-size: 2rem;
+    margin: 0;
+}
+
+.nav--carrito{
+    font-size: 1rem;
+}
+
+.nav__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: var(--ColorBlanco);
+}
+
+.backgrounds{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.background__container{
+    background-image: url(../img/perrito.gif);
+    width: 100%;
+    height: 39rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.inicio--container{
+    padding: 3rem;
+}
+
+.inicio--boton{
+    width: 10rem;
+    height: 3rem;
+    font-size: 1rem;
+    background-color: var(--ColorNegro);
+    color: var(--ColorBlanco);
+    border-radius: 50rem;
+    border: 0;
+}
+
+.tienda__container{
+    width: 100%;
+    height: 50rem;
+}
+
+
+.nav--tienda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+
+.nav--tienda a{
+    font-size: 1rem;
+}
+
+.tienda--grid{
+    width: 100%;
+    height: 46rem;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, 50%);
+}
+
+.tienda--tarjeta{
+    border: 1px solid var(--ColorBlanco);
+    height: 20rem;
+    width: 90%;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.precio--tarjeta{
+    font-size: 1.5rem;
+    margin: 0;
+    color: var(--ColorVerde);
+}
+
+.p-tarjeta{
+    margin: 0;
+    padding: 1rem;
+    font-size: 0.7rem;
+}
+
+.img--tarjeta{
+    width: 10rem;
+}
+
+.start--tarjeta{
+    color: var(--ColorAmarillo);
+    padding: 0.5rem;
+}
+
+.start--black{
+    color: var(--ColorNegro);
+}
+
+.boton--tarjeta{
+    border-radius: 0; 
+    height: 2rem;
+    width: 7rem;
+}
+
+.ubicacion__container{
+    background-color: var(--ColorBlanco);
+    padding-bottom: 3rem;
+    height: 30rem;
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    grid-template-rows: repeat(2, 50%);
+    grid-template-areas: ". item1 ."
+                         "item3 item2 item4";
+}
+
+.ubicacion--img{
+    width: 25rem;
+}
+
+.ubicacion--mapa{
+    width: 24rem;
+    height: 15rem;
+    border: 0;
+}
+
+.item1{
+    grid-area: item1;
+}
+
+.item2{
+    grid-area: item2;
+}
+
+.item3{
+    grid-area: item3;
+}
+
+.item4{
+    grid-area: item4;
+}
+
+
+.ubicacion--flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ubicacion--flex--uno{
+    justify-content: flex-end;
+}
+
+.ubicacion--icon{
+    font-size: 2rem;
+}
+
+
+.footer__container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: var(--ColorNegro);
+    height: 5rem;
+    color: var(--ColorBlanco);
+}
