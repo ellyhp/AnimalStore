@@ -32,8 +32,10 @@ h3{
     margin: 0;
 }
 
+
 .nav--carrito{
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .nav__container{
@@ -200,6 +202,7 @@ h3{
 }
 
 
+
 .footer__container{
     display: flex;
     justify-content: center;
@@ -209,6 +212,67 @@ h3{
     color: var(--ColorBlanco);
 }
 
+/* SHOPPING */
+
+.inactive{
+    display: none;
+}
+
+.shopping--container{
+    position: absolute;
+    margin-top: 33rem;
+    right: 20vmax;
+    width: 20rem;
+    height: 30rem;
+    background-color: var(--ColorFondo);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+}
+
+.content--item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 17rem;
+    height: 5rem;
+    gap: 1rem;
+    border-bottom: 1px solid var(--ColorBlanco);
+}
+
+.button--item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img--item{
+    width: 2.7rem;
+}
+
+.p--item{
+    font-size: 10px;
+    text-align: center;
+}
+
+.p--price{
+    font: 11px;
+    padding: 0;
+    margin: 7px;
+    color: green;
+    font-weight: bold;
+}
+
+.btn--shop{
+    width: 5rem;
+    height: 1.7rem;
+    cursor: pointer;
+}
+
+.menu--responsives{
+    position: absolute;
+    font-size: 5rem;
+}
 
 @media (max-width: 1080px){
     .tienda--grid{
@@ -239,10 +303,9 @@ h3{
 
 
 @media (max-width: 700px) {
+
     .nav__container{
-        flex-direction: column;
-        background-color: var(--ColorNegro);
-        color: var(--ColorBlanco);
+        display: none;
     }
     .nav__container a{
         color: var(--ColorBlanco);
@@ -277,3 +340,4 @@ h3{
     }
 
 }
+
