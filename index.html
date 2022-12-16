@@ -18,55 +18,74 @@
         <a href="#">Sobre nosotros</a>
         <a href="#">Iniciar sesión</a>
         <i class="fa-solid fa-cart-shopping icon nav--carrito"></i>
-            <div class="shopping--container inactive">
-                <div class="content--item">
-                    <div class="image--item">
-                        <img  class="img--item" src="img/pelota1.png" alt="">
-                    </div>
-                    <div class="about--item">
-                        <p class="p--item">Fancy Pets Pelota de Juguete Grande con Sonido para Perro Color Azul</p>
-                    </div>
-                    <div class="button--item">
-                        <p class="p--price">130$</p>
-                        <button class="inicio--boton boton--tarjeta btn--shop">Comprar</button>
-                    </div>
+            <div class="shopping--container inactive" >
+                <div class="flex--shopping">
+                    <table  id="carList">
+                        <!-- <div class="content--item">
+                            <div class="image--item">
+                                <img  class="img--item" src="img/pelota1.png" alt="">
+                            </div>
+                            <div class="about--item">
+                                <p class="p--item">Fancy Pets Pelota de Juguete Grande con Sonido para Perro Color Azul</p>
+                            </div>
+                            <div class="button--item">
+                                <p class="p--price">130$</p>
+                                <button class="inicio--boton boton--tarjeta btn--shop">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="content--item">
+                            <div class="image--item">
+                                <img  class="img--item" src="img/gatito.png" alt="">
+                            </div>
+                            <div class="about--item">
+                                <p class="p--item">Almohada Creativa Scratch Pet Toys</p>
+                            </div>
+                            <div class="button--item">
+                                <p class="p--price">90$</p>
+                                <button class="inicio--boton boton--tarjeta btn--shop">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="content--item">
+                            <div class="image--item">
+                                <img  class="img--item" src="img/tunel.png" alt="">
+                            </div>
+                            <div class="about--item">
+                                <p class="p--item">UBAMALL Túnel para Gatos</p>
+                            </div>
+                            <div class="button--item">
+                                <p class="p--price">500$</p>
+                                <button class="inicio--boton boton--tarjeta btn--shop">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="content--item">
+                            <div class="image--item">
+                                <img  class="img--item" src="img/toy.png" alt="">
+                            </div>
+                            <div class="about--item">
+                                <p class="p--item">Petstages Tower of Tracks Pet Toys</p>
+                            </div>
+                            <div class="button--item">
+                                <p class="p--price">600$</p>
+                                <button class="inicio--boton boton--tarjeta btn--shop">Comprar</button>
+                            </div>
+                        </div> -->
+                        
+                        <thead>
+                            <tr class="tr--car">
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+    
+                    <button class="inicio--boton boton--tarjeta btn-100 btn-emptycart">Vaciar carrito</button>
+                    
                 </div>
-                <div class="content--item">
-                    <div class="image--item">
-                        <img  class="img--item" src="img/gatito.png" alt="">
-                    </div>
-                    <div class="about--item">
-                        <p class="p--item">Almohada Creativa Scratch Pet Toys</p>
-                    </div>
-                    <div class="button--item">
-                        <p class="p--price">90$</p>
-                        <button class="inicio--boton boton--tarjeta btn--shop">Comprar</button>
-                    </div>
-                </div>
-                <div class="content--item">
-                    <div class="image--item">
-                        <img  class="img--item" src="img/tunel.png" alt="">
-                    </div>
-                    <div class="about--item">
-                        <p class="p--item">UBAMALL Túnel para Gatos</p>
-                    </div>
-                    <div class="button--item">
-                        <p class="p--price">500$</p>
-                        <button class="inicio--boton boton--tarjeta btn--shop">Comprar</button>
-                    </div>
-                </div>
-                <div class="content--item">
-                    <div class="image--item">
-                        <img  class="img--item" src="img/toy.png" alt="">
-                    </div>
-                    <div class="about--item">
-                        <p class="p--item">Petstages Tower of Tracks Pet Toys</p>
-                    </div>
-                    <div class="button--item">
-                        <p class="p--price">600$</p>
-                        <button class="inicio--boton boton--tarjeta btn--shop">Comprar</button>
-                    </div>
-                </div>
+
             </div>
     </nav>
 
@@ -89,7 +108,7 @@
                 <a href="#">Higiene</a>
             </div>
 
-            <div class="tienda--grid">
+            <div class="tienda--grid" id="shop">
 
                 <div class="tienda--tarjeta">
                     <img class="img--tarjeta" src="img/pelota1.png" alt="Pelota">
@@ -102,7 +121,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star start--black"></i>
                     </div>
-                    <button class="inicio--boton boton--tarjeta">Comprar</button>
+                    <button class="inicio--boton boton--tarjeta" data-id="1">Comprar</button>
                 </div>
                 
                 <div class="tienda--tarjeta">
@@ -116,7 +135,7 @@
                         <i class="fa-solid fa-star start--black"></i>
                         <i class="fa-solid fa-star start--black"></i>
                     </div>
-                    <button class="inicio--boton boton--tarjeta">Comprar</button>
+                    <button class="inicio--boton boton--tarjeta" data-id="2">Comprar</button>
                 </div>
 
                 <div class="tienda--tarjeta">
@@ -130,7 +149,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <button class="inicio--boton boton--tarjeta">Comprar</button>
+                    <button class="inicio--boton boton--tarjeta" data-id="3">Comprar</button>
                 </div>
 
                 <div class="tienda--tarjeta">
@@ -144,7 +163,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <button class="inicio--boton boton--tarjeta">Comprar</button>
+                    <button class="inicio--boton boton--tarjeta" data-id="4">Comprar</button>
                 </div>
                 
                 <div class="tienda--tarjeta">
@@ -158,7 +177,7 @@
                         <i class="fa-solid fa-star start--black"></i>
                         <i class="fa-solid fa-star start--black"></i>
                     </div>
-                    <button class="inicio--boton boton--tarjeta">Comprar</button>
+                    <button class="inicio--boton boton--tarjeta" data-id="5">Comprar</button>
                 </div>
 
                 <div class="tienda--tarjeta">
@@ -172,7 +191,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <button class="inicio--boton boton--tarjeta">Comprar</button>
+                    <button class="inicio--boton boton--tarjeta" data-id="6">Comprar</button>
                 </div>
 
                 <div class="tienda--tarjeta">
@@ -186,7 +205,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <button class="inicio--boton boton--tarjeta">Comprar</button>
+                    <button class="inicio--boton boton--tarjeta" data-id="7">Comprar</button>
                 </div>
 
                 <div class="tienda--tarjeta">
@@ -200,7 +219,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star start--black"></i>
                     </div>
-                    <button class="inicio--boton boton--tarjeta">Comprar</button>
+                    <button class="inicio--boton boton--tarjeta" data-id="8">Comprar</button>
                 </div>
 
             </div>

@@ -220,6 +220,7 @@ h3{
 
 .shopping--container{
     position: absolute;
+    align-items: center;
     margin-top: 33rem;
     right: 20vmax;
     width: 20rem;
@@ -227,6 +228,21 @@ h3{
     background-color: var(--ColorFondo);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 1rem;
+}
+
+.flex--shopping{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#carList{
+    width: 100%;
+}
+
+.btn-100{
+    width: 100%;
 }
 
 .content--item{
@@ -273,6 +289,26 @@ h3{
     position: absolute;
     font-size: 5rem;
 }
+
+.tr--car{
+    font-size: 0.9rem;
+}
+
+.tr--car th{
+    padding: 0.4rem;
+}
+
+.icon--delete{
+   color: #fd0c0c;
+}
+
+td{
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--ColorBlanco);
+    padding: 0.5rem;
+}
+
+
 
 @media (max-width: 1080px){
     .tienda--grid{
