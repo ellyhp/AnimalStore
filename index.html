@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/icono.png">
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav class="nav__container">
+        <a href="#">Inicio</a>
+        <a href="#">Comprar</a>
+        <a href="#">Sobre nosotros</a>
+        <a href="#">Iniciar sesión</a>
+        <i class="fa-solid fa-cart-shopping icon nav--carrito"></i>
+            <div class="shopping--container inactive" >
+                <div class="flex--shopping">
+                    <table  id="carList">
+                        <!-- <div class="content--item">
+                            <div class="image--item">
+                                <img  class="img--item" src="img/pelota1.png" alt="">
+                            </div>
+                            <div class="about--item">
+                                <p class="p--item">Fancy Pets Pelota de Juguete Grande con Sonido para Perro Color Azul</p>
+                            </div>
+                            <div class="button--item">
+                                <p class="p--price">130$</p>
+                                <button class="inicio--boton boton--tarjeta btn--shop">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="content--item">
+                            <div class="image--item">
+                                <img  class="img--item" src="img/gatito.png" alt="">
+                            </div>
+                            <div class="about--item">
+                                <p class="p--item">Almohada Creativa Scratch Pet Toys</p>
+                            </div>
+                            <div class="button--item">
+                                <p class="p--price">90$</p>
+                                <button class="inicio--boton boton--tarjeta btn--shop">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="content--item">
+                            <div class="image--item">
+                                <img  class="img--item" src="img/tunel.png" alt="">
+                            </div>
+                            <div class="about--item">
+                                <p class="p--item">UBAMALL Túnel para Gatos</p>
+                            </div>
+                            <div class="button--item">
+                                <p class="p--price">500$</p>
+                                <button class="inicio--boton boton--tarjeta btn--shop">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="content--item">
+                            <div class="image--item">
+                                <img  class="img--item" src="img/toy.png" alt="">
+                            </div>
+                            <div class="about--item">
+                                <p class="p--item">Petstages Tower of Tracks Pet Toys</p>
+                            </div>
+                            <div class="button--item">
+                                <p class="p--price">600$</p>
+                                <button class="inicio--boton boton--tarjeta btn--shop">Comprar</button>
+                            </div>
+                        </div> -->
+                        
+                        <thead>
+                            <tr class="tr--car">
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+    
+                    <button class="inicio--boton boton--tarjeta btn-100 btn-emptycart">Vaciar carrito</button>
+                    
+                </div>
+
+            </div>
+    </nav>
+
+    <main>
+
+        <div class="background__container backgrounds">
+            <div class="inicio--container">
+                    <h1 class="h1">¡Lo mejor para tu mascota!</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, sapiente!</p>
+                    <button class="inicio--boton">Comprar</button>
+            </div>
+        </div>
+
+        <div class="tienda__container">
+
+            <div class="nav--tienda">
+                <a href="#">Juguetes</a>
+                <a href="#">Comida</a>
+                <a href="#">Accesorios</a>
+                <a href="#">Higiene</a>
+            </div>
+
+            <div class="tienda--grid" id="shop">
+
+                <div class="tienda--tarjeta">
+                    <img class="img--tarjeta" src="img/pelota1.png" alt="Pelota">
+                    <p class="p-tarjeta">Fancy Pets Pelota de Juguete Grande con Sonido para Perro Color Azul</p>
+                    <h3 class="precio--tarjeta">130$</h3>
+                    <div class="start--tarjeta">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star start--black"></i>
+                    </div>
+                    <button class="inicio--boton boton--tarjeta" data-id="1">Comprar</button>
+                </div>
+                
+                <div class="tienda--tarjeta">
+                    <img class="img--tarjeta" src="img/gatito.png" alt="Pelota">
+                    <p class="p-tarjeta">Almohada Creativa Scratch Pet Toys</p>
+                    <h3 class="precio--tarjeta">90$</h3>
+                    <div class="start--tarjeta">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star start--black"></i>
+                        <i class="fa-solid fa-star start--black"></i>
+                        <i class="fa-solid fa-star start--black"></i>
+                    </div>
+                    <button class="inicio--boton boton--tarjeta" data-id="2">Comprar</button>
+                </div>
+
+                <div class="tienda--tarjeta">
+                    <img class="img--tarjeta" src="img/tunel.png" alt="Pelota">
+                    <p class="p-tarjeta">PUBAMALL Túnel para Gatos</p>
+                    <h3 class="precio--tarjeta">500$</h3>
+                    <div class="start--tarjeta">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button class="inicio--boton boton--tarjeta" data-id="3">Comprar</button>
+                </div>
+
+                <div class="tienda--tarjeta">
+                    <img class="img--tarjeta" src="img/toy.png" alt="Pelota">
+                    <p class="p-tarjeta">Petstages Tower of Tracks Pet Toys</p>
+                    <h3 class="precio--tarjeta">600$</h3>
+                    <div class="start--tarjeta">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button class="inicio--boton boton--tarjeta" data-id="4">Comprar</button>
+                </div>
+                
+                <div class="tienda--tarjeta">
+                    <img class="img--tarjeta" src="img/hueso.png" alt="Pelota">
+                    <p class="p-tarjeta">Hartz At Play Hueso Flexible De Goma Flexible, Colores Surtidos.</p>
+                    <h3 class="precio--tarjeta">90$</h3>
+                    <div class="start--tarjeta">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star start--black"></i>
+                        <i class="fa-solid fa-star start--black"></i>
+                    </div>
+                    <button class="inicio--boton boton--tarjeta" data-id="5">Comprar</button>
+                </div>
+
+                <div class="tienda--tarjeta">
+                    <img class="img--tarjeta" src="img/toy(2).png" alt="Pelota">
+                    <p class="p-tarjeta">Fancy Pets Juguete JALADERA C/Pelota</p>
+                    <h3 class="precio--tarjeta">128$</h3>
+                    <div class="start--tarjeta">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button class="inicio--boton boton--tarjeta" data-id="6">Comprar</button>
+                </div>
+
+                <div class="tienda--tarjeta">
+                    <img class="img--tarjeta" src="img/spiny.png" alt="Pelota">
+                    <p class="p-tarjeta">Fancy Pets Juguete d Pelota de Caucho Spiny para Perro.</p>
+                    <h3 class="precio--tarjeta">110$</h3>
+                    <div class="start--tarjeta">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button class="inicio--boton boton--tarjeta" data-id="7">Comprar</button>
+                </div>
+
+                <div class="tienda--tarjeta">
+                    <img class="img--tarjeta" src="img/raton.png" alt="Pelota">
+                    <p class="p-tarjeta">Brrnoo Ratón interactivo para gato, juguete de rata.</p>
+                    <h3 class="precio--tarjeta">220$</h3>
+                    <div class="start--tarjeta">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star start--black"></i>
+                    </div>
+                    <button class="inicio--boton boton--tarjeta" data-id="8">Comprar</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="ubicacion__container">
+
+            <div class="item1 ubicacion--flex ubicacion--flex--uno">
+                <h3>¿Quienes somos?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, ipsa! Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="item2 ubicacion--flex">
+                <i class="fa-solid fa-location-dot ubicacion--icon"></i>
+                <h3>¿Dónde nos ubicamos?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="item3 ubicacion--flex">
+                <img class="ubicacion--img" src="img/ubicacion.jpg" alt="">
+            </div>
+            <div class="item4 ubicacion--flex">
+                <iframe class="ubicacion--mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1593367.1428349754!2d100.7181732953222!3d38.739724965964264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x36485ed80441c695%3A0x8ba525ab3fba27bb!2sMinqin%20County%2C%20Wuwei%2C%20Gans%C3%BA%2C%20China!5e0!3m2!1ses-419!2smx!4v1665281249191!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+    </main>
+
+        <footer class="footer__container">
+            <p>Todos los derechos reservados &#169</p>
+        </footer>
+
+    <script src="https://kit.fontawesome.com/aaa255130f.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
