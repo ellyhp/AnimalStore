@@ -12,7 +12,12 @@ function EventListenerRegister(){
 
     iconCarrito.addEventListener('click', ShoppingCar);
     shop.addEventListener('click', shopProduct);
- 
+    ShoppingContainer.addEventListener('click', DeleteProducts);
+    DeleteCar.addEventListener('click', () => {
+        myCarShop = [];
+
+        HTMLDelete();
+    } );
 }
 
 
@@ -28,6 +33,20 @@ function shopProduct(e){
     }
 }
 
+function DeleteProducts(e){
+    if(e.target.classList.contains('icon--delete')){
+        const idProduct = e.target.getAttribute('data-id');
+
+        myCarShop = myCarShop.filter( product => product.id !== idProduct)
+        
+        HTMLCar();
+    }
+
+}
+
+
+
+
 function DataProductRead(product){
     const ProductInfo = {
         image: product.querySelector('img').src,
@@ -36,8 +55,24 @@ function DataProductRead(product){
         id: product.querySelector('button').getAttribute('data-id'),
         cantidad: 1
     }
+
+    const exists = myCarShop.some( product => product.id === ProductInfo.id);
+    if(exists){
+
+        const products = myCarShop.map( product => {
+            if(product.id === ProductInfo.id){
+                product.cantidad++;
+                return product;
+            }else {
+                return product;
+            }
+        })
+        myCarShop = [...products]
+
+    }else{
+        myCarShop = [...myCarShop, ProductInfo];
+    }
     
-    myCarShop = [...myCarShop, ProductInfo];
     console.log(myCarShop);
 
     HTMLCar();
@@ -81,12 +116,5 @@ function HTMLDelete(){
     while(CarContainer.firstChild){
         CarContainer.removeChild(CarContainer.firstChild)
     }
-}
-
-
-DeleteCar.addEventListener('click', DeleteAllCar);
-
-function DeleteAllCar(){
-    CarContainer.remove(CarContainer)
 }
 

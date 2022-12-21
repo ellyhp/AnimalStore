@@ -33,6 +33,22 @@ h3{
 }
 
 
+.div--path{
+    height: 150px; 
+    overflow: hidden;
+}
+
+.svg--path{
+    height: 100%; 
+    width: 100%;
+}
+
+.path{
+    stroke: none; 
+    fill: #08f;
+
+}
+
 .nav--carrito{
     font-size: 1rem;
     cursor: pointer;
@@ -52,6 +68,8 @@ h3{
     background-size: cover;
     background-position: center;
 }
+
+
 
 .background__container{
     background-image: url(../img/perrito.gif);
@@ -340,9 +358,6 @@ td{
 
 @media (max-width: 700px) {
 
-    .nav__container{
-        display: none;
-    }
     .nav__container a{
         color: var(--ColorBlanco);
     }
